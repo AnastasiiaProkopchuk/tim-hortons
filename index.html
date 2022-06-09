@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tim Hortons</title>
+
+  <!-- ////// External CSS ////// -->
+  <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="images/logo.png" class="logo" /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+
+      <!-- ////// Navigation Bar ////// -->
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's new</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="content">
+
+      <!-- ////// Slider Content ////// -->
+      <div class="textBox">
+        <h2>Always Fresh<br />It's <span>Tim Hortons</span></h2>
+        <p>Meet Tim Hortons summer drinks 2022 lineup, which is guaranteed to keep you cool and refreshed. There's something for everyone in the exiting and innovative Tims cold beverage lineup, which includes coffee-flavoured drinks, delicious
+          fruity
+          beverages and perfectly tart lemonades, plus indulgent and delicious Creamy Chills.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <!-- ////// Main Image ////// -->
+      <div class="imgBox">
+        <img src="images/img1.png" class="tim-hortons" />
+      </div>
+    </div>
+
+    <!-- ////// Menu Options ////// -->
+    <ul class="thumb">
+      <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#CC132B')" </li>
+      <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#D39D66')" </li>
+      <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#332926')" </li>
+    </ul>
+
+    <!-- ////// Social Media Links /////// -->
+    <ul class="social-media">
+      <li><a href="https://www.facebook.com/TimHortons/" target="_blank"><img src="images/facebook.png" </a></li>
+      <li><a href="https://twitter.com/timhortons" target="_blank"><img src="images/twitter.png" </a></li>
+      <li><a href="https://www.instagram.com/timhortons/" target="_blank"><img src="images/instagram.png" </a></li>
+    </ul>
+  </section>
+
+  <!-- ////// External JavaScript ////// -->
+  <script src="myScript.js"></script>
+</body>
+
+</html>
